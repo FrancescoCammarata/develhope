@@ -1,0 +1,33 @@
+.container{
+    border: solid 1px ;
+    width: 300px;
+    
+}
+.image{
+    background-color: grey;
+    width:300px
+}
+.itemclass1{
+    border: solid 1px;
+    width: 300px;
+    
+    font-size: large
+}
+.itemclass2{
+    border: solid 1px;
+    width: 300px;
+    
+    font-size: large
+}
+.itemclass3{
+    border: solid 1px;
+    width: 300px;
+    
+    font-size: large
+}
+.links{
+    border: solid 1px;
+    width: 300px;
+    
+    font-size: large
+}
