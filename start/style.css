@@ -1,0 +1,18 @@
+:root{
+    --primary-color: #011212;
+    --ballwidth: 100px;
+    --ballheight: 100px;
+    --secondary-color: #ff8800;
+    --border-radius: 50px;
+}
+
+body {
+    color: var(--primary-color);
+}
+
+.ball {
+    width: var(--ballwidth);
+    height: var(--ballheight);
+    color: var(--secondary-color);
+    border-radius: var(--border-radius);
+}
