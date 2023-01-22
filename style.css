@@ -1,0 +1,25 @@
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #30323d;
+}
+li {
+    float: left;
+    padding: 10px;
+    text-decoration: none;
+    color: white
+  }
+li a{
+    padding: 10px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.button{
+    background-color:#30323d;
+    border: 2px solid;
+    color: green;
+}
+  
