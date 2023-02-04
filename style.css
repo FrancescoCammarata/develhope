@@ -1,0 +1,38 @@
+.exercise {
+  border: 1px solid red;
+}
+.exercise .exercise-title {
+  color: green;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: blue;
+}
+
+.exercise-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  padding: 15px;
+}
+
+article {
+  border: 1px solid green;
+  display: flex;
+  justify-content: center;
+}
+
+p {
+  padding: 15px;
+  max-width: 300px;
+  text-align: center;
+}
+
+.p-blue {
+  color: blue;
+}
+
+.p-red {
+  color: red;
+}
+
+/*# sourceMappingURL=style.css.map */
