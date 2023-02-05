@@ -1,6 +1,7 @@
 $color-primary: red;
 $color-secondary: blue;
 $color-tertiary: green;
+$font-size : 1rem;
 
 .exercise {
     border: 1px solid $color-tertiary;
@@ -18,21 +19,21 @@ $color-tertiary: green;
         text-align: center;
         padding: 15px;
     }
-@mixin article-card($color) {
+@mixin article-card($color, $border-color, $font-size) {
     color: $color;
-    border-color: $color-tertiary;
-    font-size: 1rem;
+    border-color: $border-color;
+    font-size: $font-size;
 }
 article{
     border: 1px solid;
 }
 .article-blue{
-    @include article-card($color-secondary);
+    @include article-card($color-secondary, $color-tertiary, $font-size);
     display: flex;
     justify-content: center;
 }
 .article-red{
-    @include article-card($color-primary);
+    @include article-card($color-primary, $color-tertiary, $font-size);
     display: flex;
     justify-content: center;
 }
