@@ -1,0 +1,64 @@
+@use "variables.scss";
+@use "function.scss";
+
+.exercise {
+    border: function.remCalc(1) solid variables.$color-primary;
+    %text{
+        color: variables.$color-tertiary;
+            text-align: center;
+            text-decoration: underline;
+            text-decoration-color: variables.$color-secondary;
+    
+    }
+    .subtitle-container{
+        display:flex;
+        justify-content: center;
+    }
+        .exercise-title {
+            @extend %text;
+        }
+        
+        &_subtitle{
+            @extend %text;
+            padding: 1rem;
+            border: 1px solid red;
+            width:fit-content;
+        }
+    }
+    .exercise-content{
+        display:grid;
+        grid-template-columns: repeat(4,1fr);
+        text-align: center;
+        padding: function.remCalc(15);
+    }
+@mixin article-card($color, $border-color, $font-size) {
+    color: $color;
+    border-color: $border-color;
+    font-size: $font-size;
+}
+article{
+    border: function.remCalc(1) solid;
+}
+.article-blue{
+    @include article-card(variables.$color-secondary, variables.$color-tertiary, variables.$font-size);
+    display: flex;
+    justify-content: center;
+}
+.article-red{
+    @include article-card(variables.$color-primary, variables.$color-tertiary, variables.$font-size);
+    display: flex;
+    justify-content: center;
+}
+.article-footer{
+    padding: function.remCalc(25);
+    font-size: function.remCalc(24);
+    border-color: variables.$color-secondary;
+}
+.article-footer-section{
+    padding: function.remCalc(15);
+    text-align: center;
+    color: variables.$color-tertiary;
+}
+.exercise-content-p{
+    max-width: function.remCalc(300);
+}

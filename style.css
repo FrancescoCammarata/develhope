@@ -1,0 +1,63 @@
+.exercise {
+  border: 0.0625rem solid red;
+}
+.exercise .exercise_subtitle, .exercise .exercise-title {
+  color: green;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: blue;
+}
+.exercise .subtitle-container {
+  display: flex;
+  justify-content: center;
+}
+.exercise_subtitle {
+  padding: 1rem;
+  border: 1px solid red;
+  width: fit-content;
+}
+
+.exercise-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  padding: 0.9375rem;
+}
+
+article {
+  border: 0.0625rem solid;
+}
+
+.article-blue {
+  color: blue;
+  border-color: green;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.article-red {
+  color: red;
+  border-color: green;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.article-footer {
+  padding: 1.5625rem;
+  font-size: 1.5rem;
+  border-color: blue;
+}
+
+.article-footer-section {
+  padding: 0.9375rem;
+  text-align: center;
+  color: green;
+}
+
+.exercise-content-p {
+  max-width: 18.75rem;
+}
+
+/*# sourceMappingURL=style.css.map */
