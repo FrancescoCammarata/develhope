@@ -1,6 +1,6 @@
 function calculateAverageAge(persons) {
   const sum = persons.reduce((accumulator ,currentValue) => accumulator + currentValue.age, 0)
-  return Math.round(sum/9)
+  return Math.round(sum/persons.length)
 }
 
 const persons = [
