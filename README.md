@@ -1,14 +1,18 @@
-# Classes - Exercise 58
+# Classes - Exercise 57
 
-Define a class called `Person` that takes in three parameters in the constructor (`firstName`, `lastName` and `age`). Create the getters and setters methods for each property and a getter method called `fullName` that returns the full name.
+Define a static method called fromObject inside the Person class which takes in an object literal as parameter and instantiate a Person object.
 
 class Person {
-// ...
+constructor(firstName, lastName) {
+this.firstName = firstName;
+this.lastName = lastName;
+}
 }
 
-const person = new Person('Mario', 'Rossi', 25);
-console.log(person.fullName);
+const obj = {
+firstName: 'Mario',
+lastName: 'Rossi'
+};
 
-person.firstName = 'Maria';
-person.lastName = 'Verdi';
-console.log(person.fullName);
+const person = Person.fromObject(obj);
+console.log(person.firstName + " " + person.lastName);
